@@ -6,6 +6,9 @@
 
 body {
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Allow stacking of elements */
+    align-items: center; /* Center align content */
 }
 
 #map {
@@ -16,24 +19,29 @@ body {
 
 h1 {
     text-align: center;
+    margin: 20px 0; /* Add margin for spacing */
 }
 
+/* Search container styles */
 #search-container {
-    position: absolute;
-    top: 10px;
-    left: 10px;
+    position: relative; /* Change from absolute to relative */
+    top: 0; /* Reset top */
+    left: 0; /* Reset left */
     z-index: 1000;
-
+    display: flex; /* Flexbox for alignment */
+    flex-direction: row; /* Align input and button in a row */
+    gap: 10px; /* Space between input and button */
 }
 
+/* Input styles */
 #search-container input {
     padding: 10px;
-    width: 250px;
+    width: 250px; /* Fixed width for larger screens */
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-bottom: 10px;
 }
 
+/* Button styles */
 #search-container button {
     padding: 10px;
     border: none;
@@ -45,4 +53,32 @@ h1 {
 
 #search-container button:hover {
     background-color: #0056b3;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    body {
+        align-items: stretch; /* Allow search container to take full width */
+    }
+    
+    #search-container {
+        flex-direction: column; /* Stack input and button */
+        align-items: stretch; /* Full width for inputs */
+        width: 90%; /* Limit the width of the container */
+    }
+
+    #search-container input,
+    #search-container button {
+        width: 100%; /* Full width for mobile devices */
+    }
+}
+
+@media (max-width: 375px) {
+    h1 {
+        font-size: 1.5rem; /* Adjust font size for very small screens */
+    }
+
+    #search-container {
+        padding: 0 5%; /* Add padding for small screens */
+    }
 }
