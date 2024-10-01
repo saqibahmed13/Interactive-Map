@@ -440,6 +440,8 @@ var locations = [
   },
 ];
 
+
+
 // Add markers to the map
 locations.forEach((location) => {
   var marker = L.marker([location.lat, location.lon]).addTo(map);
@@ -453,6 +455,12 @@ document.getElementById("searchBtn").addEventListener("click", function () {
     location.name.toLowerCase().includes(searchInput)
   );
 
+// if the input is empty
+  if(searchInput === ""){
+    alert("Enter the place");
+    return;
+}
+
   if (foundLocation) {
     // Center the map on the found location and open the marker popup
     map.setView([foundLocation.lat, foundLocation.lon], 14);
@@ -462,7 +470,11 @@ document.getElementById("searchBtn").addEventListener("click", function () {
         `<b>${foundLocation.name}</b><br>${foundLocation.description}`
       )
       .openOn(map);
-  } else {
+  }
+  else {
     alert("Location not found. Please try a different search term.");
   }
 });
+
+
+
