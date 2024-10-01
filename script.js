@@ -457,7 +457,7 @@ document.getElementById("searchBtn").addEventListener("click", function () {
 
 // if the input is empty
   if(searchInput === ""){
-    alert("Enter the place");
+    alert("Enter the place to search");
     return;
 }
 
