@@ -1,0 +1,31 @@
+# India Map Project
+
+## Overview
+
+This project is an interactive map showcasing various states, cities, and points of interest in India. It utilizes the Leaflet library to create a dynamic map experience with markers representing each location.
+
+## Features
+
+- **Interactive Map**: Displays an interactive map centered on New Delhi, India.
+- **Markers**: Points of interest, major cities, and state capitals are marked on the map with popups containing descriptions.
+- **Search Functionality**: Users can search for specific locations, and the map will center on the found location with an information popup.
+
+## Technologies Used
+
+- **JavaScript**: For functionality and interactivity.
+- **Leaflet.js**: A leading open-source JavaScript library for mobile-friendly interactive maps.
+- **HTML/CSS**: For structuring and styling the web page.
+
+## Getting Started
+
+### Prerequisites
+
+- A modern web browser (Chrome, Firefox, Safari, etc.)
+- Basic understanding of HTML and JavaScript
+
+### Installation
+
+1. Clone the repository to your local machine.
+   ```bash
+   git clone https://github.com/yourusername/india-map-project.git
+   cd india-map-project
