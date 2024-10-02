@@ -23,9 +23,13 @@ This project is an interactive map showcasing various states, cities, and points
 - A modern web browser (Chrome, Firefox, Safari, etc.)
 - Basic understanding of HTML and JavaScript
 
+## Demo 
+
+- View the live demo here: [Live Demo on Netlify](https://mapxsinteractive.netlify.app/)
+
 ### Installation
 
 1. Clone the repository to your local machine.
    ```bash
-   git clone https://github.com/yourusername/india-map-project.git
-   cd india-map-project
+   git clone https://github.com/saqibahmed13/Interactive-Map.git
+   cd Interactive-Map
